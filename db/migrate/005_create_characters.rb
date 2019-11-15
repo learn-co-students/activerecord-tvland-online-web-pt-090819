@@ -4,7 +4,7 @@ class CreateCharacters < ActiveRecord::Migration[5.1]
             c.string :name
             c.integer :actor_id
             c.integer :show_id
+            c.string :catchphrase
         end
-        add_column :characters, :catchphrase, :string
     end
 end
