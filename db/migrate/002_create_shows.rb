@@ -6,6 +6,10 @@ class CreateShows < ActiveRecord::Migration[5.1]
     create_table :shows do |t|
       #primary key of :id is created for us!
       t.string :name
+      t.integer "network_id"
+      t.string "day"
+      t.string "genre"
+      t.string "season"
     end
   end
 end
